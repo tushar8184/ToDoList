@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header><h1>ToDo List Project!</h1></header>
+
+    <!-- //* ------Forms with Button --------->
+    <form>
+      <input type="text" name="name" id="todo_input" />
+      <button type="submit" id="todo_button">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" id="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incompleted">Incompleted</option>
+        </select>
+      </div>
+    </form>
+
+    <!--//* ------- Ul container --------->
+    <div id="todo_container">
+      <ul id="todo_list"></ul>
+    </div>
+    <ul class="link-div">
+      <li class="link">
+        <a class="green-button-link" href="#"></a>
+      </li>
+    </ul>
+  </body>
+</html>

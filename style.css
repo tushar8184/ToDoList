@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #303f9f, #00bcd4);
+  color: white;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header h1 {
+  font-weight: 600;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  background-color: white;
+  font-size: 2rem;
+  border: none;
+}
+
+form button {
+  color: #81c784;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #81c784;
+  color: white;
+}
+
+#todo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo_list {
+  list-style: none;
+  min-width: 20%;
+}
+
+.todo {
+  margin: 0.5rem;
+  background-color: white;
+  color: #424242;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.todo .todo_item {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.complete-btn,
+.thrash-btn {
+  background: #ff7043;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #f9a825;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  width: 10rem;
+  color: #ff7043;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select {
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: #ff7043;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: #81c784;
+  color: #ff7043;
+}
